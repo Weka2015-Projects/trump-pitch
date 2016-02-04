@@ -6,16 +6,15 @@ class Animation extends Component {
   }
 
   changeColor(param) {
-    document.body.style.backgroundColor = param
+    return(document.body.style.backgroundColor = param)
   }
 
   render() {
-    var x;
-    if(this.props.keyCode === 81) {
-      this.changeColor("#eee")
-    } else this.changeColor('#000')
+    var animations = {81: "#eee", 80: "#777" }
+    var audio = {81: , 80: }
+    this.changeColor(animations[this.props.keyCode])
     return (
-      <p>{x}</p>
+      <p></p>
     )
   }
 

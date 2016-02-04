@@ -9,6 +9,7 @@ main {
   border: 2px solid gray;
   background-color: #eee;
   margin-top: 100px;
+  border-radius: 15px;
 }
 
 
@@ -19,6 +20,8 @@ main {
   border: solid 1px gray;
   background-color: white;
   margin: 5px;
+  border-radius: 10px;
+  line-height: 55px;
 }
 
 .z {

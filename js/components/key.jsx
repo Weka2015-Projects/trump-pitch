@@ -12,7 +12,7 @@ class Key extends Component {
     }
   }
   render() {
-    console.log(this.props.letter)
+
     return(
       <span className={this.props.letter + ' box'}>
         {this.props.letter}

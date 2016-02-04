@@ -10,35 +10,24 @@ class Animation extends Component {
   }
   addSound1(param) {
     var audioElement = document.createElement('audio')
-      audioElement.setAttribute('src', 'audio/trump.mp3')
+      audioElement.setAttribute('src', 'audio/' + param + '.mp3')
       audioElement.setAttribute('autoplay', 'autoplay')
-      $.get()
-      audioElement.addEventListener("load", function() {
-        audioElement.Play()
-    }, true)
-  }
-
-  addAnotherSound(){
-    var audioElement = document.createElement('audio')
-      audioElement.setAttribute('src', 'audio/hotlinebling.mp3')
-      audioElement.setAttribute('autoplay', 'autoplay')
-      $.get()
+      
       audioElement.addEventListener("load", function() {
         audioElement.Play()
     }, true)
   }
 
   render() {
-    var x;
     if(this.props.keyCode === 81) {
       this.changeColor("#eee")
-      this.addSound1()
+      this.addSound1('trump')
     } else if (this.props.keyCode === 80 ) {
-      this.addAnotherSound()
+      this.addSound1('hotlinebling')
     }
 
     return (
-      <p>{x}</p>
+      <p></p>
     )
   }
 

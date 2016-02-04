@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import App from './app.jsx'
 
 class Q extends Component {
   constructor (props) {
@@ -6,7 +7,7 @@ class Q extends Component {
   }
   render(){
     return(
-
+      <p>P I am your Father!</p>
     )
   }
 }

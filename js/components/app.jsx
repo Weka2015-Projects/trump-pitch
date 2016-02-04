@@ -1,23 +1,28 @@
 import React, { Component } from 'react'
+import Q from './q.jsx'
+import P from './p.jsx'
+
+let components = {81:Q, 80:P}
 
 class App extends Component {
   constructor (props) {
     super(props)
-    var keycode = document.addEventListener(
+    var keyCode = document.addEventListener(
       'keydown',
       this.handleKeyDown.bind(this)
     )
-    this.state = {keycode}
+    this.state = {
+      keyCode: 81
+    }
   }
   handleKeyDown (event) {
+    console.log(event)
     event.preventDefault()
-    this.setState({keycode: event.keyCode})
+    this.setState({keyCode: event.keyCode})
   }
 
   render() {
-    return (
-      <p>{this.state.keycode}</p>
-    )
+    return  React.createElement(components[this.state.keyCode])
   }
 }
 

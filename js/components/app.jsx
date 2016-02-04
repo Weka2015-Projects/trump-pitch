@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
-import Q from './q.jsx'
-import P from './p.jsx'
-
-let components = {81:Q, 80:P}
+import Animation from './animation.jsx'
 
 class App extends Component {
   constructor (props) {
@@ -12,7 +9,7 @@ class App extends Component {
       this.handleKeyDown.bind(this)
     )
     this.state = {
-      keyCode: 81
+      keyCode
     }
   }
   handleKeyDown (event) {
@@ -22,8 +19,9 @@ class App extends Component {
   }
 
   render() {
-    return  React.createElement(components[this.state.keyCode])
-  }
+    return(
+    <Animation keyCode={this.state.keyCode} />
+  )}
 }
 
 export default App

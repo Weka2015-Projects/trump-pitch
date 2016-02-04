@@ -9,9 +9,14 @@ class Animation extends Component {
     return(document.body.style.backgroundColor = param)
   }
 
+  changeAudio(param) {
+    var audio = new Audio('audio/' + param + '.mp3')
+    audio.play()
+  }
+
   render() {
     var animations = {81: "#eee", 80: "#777" }
-    var audio = {81: , 80: }
+    var audio = {81:  , 80: }
     this.changeColor(animations[this.props.keyCode])
     return (
       <p></p>

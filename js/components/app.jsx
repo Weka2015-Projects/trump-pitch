@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Animation from './animation.jsx'
+import Keyboard from './keyboard.jsx'
 
 class App extends Component {
   constructor (props) {
@@ -20,7 +21,10 @@ class App extends Component {
 
   render() {
     return(
-    <Animation keyCode={this.state.keyCode} />
+    <div className="keyboard">
+      <Animation keyCode={this.state.keyCode} />
+      <Keyboard />
+    </div>
   )}
 }
 

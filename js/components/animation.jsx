@@ -16,8 +16,8 @@ class Animation extends Component {
 
   render() {
 
-    var animations = {81: "#eee", 80: "#777" }
-    var audio = {81: "hotlinebling", 80: "trump" }
+    var animations = {81: "#eee", 80: "#777", 87: "#666" }
+    var audio = {81: "hotlinebling", 80: "trump", 87: "airhorn",  }
     this.changeColor(animations[this.props.keyCode])
     this.changeAudio(audio[this.props.keyCode])
     return (

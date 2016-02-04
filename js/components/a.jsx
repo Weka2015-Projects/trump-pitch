@@ -4,7 +4,7 @@ class A extends Component {
   constructor (props) {
     super (props)
   }
-  render(){
+  render() {
     return(
 
     )

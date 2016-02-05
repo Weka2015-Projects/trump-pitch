@@ -1,6 +1,11 @@
-var test = require('tape')
+// require('babel-core')
+import {shallow, mount} from 'enzyme'
+var App = require('../js/components/app.jsx')
+var React = require('react')
+var ReactDOM = require('react-dom')
 
-test('testing trump-pitch', function (t) {
-  t.ok(true)
-  t.end()
+
+it('should render two components', () => {
+  var row = shallow(<App />)
+  console.log(row)
 })

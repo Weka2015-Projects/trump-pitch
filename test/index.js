@@ -1,6 +1,3 @@
-var test = require('tape')
-
-test('testing trump-pitch', function (t) {
-  t.ok(true)
-  t.end()
-})
+const mocha = require('mocha')
+const chai = require('chai')
+const js = require ('../js/main.jsx')

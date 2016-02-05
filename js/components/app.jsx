@@ -14,7 +14,6 @@ class App extends Component {
     }
   }
   handleKeyDown (event) {
-    console.log(event)
     event.preventDefault()
     this.setState({keyCode: event.keyCode})
   }
@@ -23,7 +22,7 @@ class App extends Component {
     return(
     <div className="keyboard">
       <Animation keyCode={this.state.keyCode} />
-      <Keyboard />
+      <Keyboard keyCode = {this.state.keyCode}/>
     </div>
   )}
 }

@@ -24,6 +24,17 @@ main {
   line-height: 55px;
 }
 
+.box-active {
+  width: 55px;
+  height: 55px;
+  display:inline-block;
+  border: solid 1px gray;
+  background-color: slategray;
+  margin: 5px;
+  border-radius: 10px;
+  line-height: 55px;
+}
+
 .z {
   position: relative;
   right: 775px;
